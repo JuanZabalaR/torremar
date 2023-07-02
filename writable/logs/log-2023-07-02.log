@@ -1,0 +1,204 @@
+CRITICAL - 2023-07-02 01:41:55 --> site_url(): Argument #2 ($scheme) must be of type ?string, array given, called in C:\wamp64\www\Torremar\app\Controllers\Reservas.php on line 48
+in SYSTEMPATH\Helpers\url_helper.php on line 116.
+ 1 APPPATH\Controllers\Reservas.php(48): site_url('dashboard', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 01:55:45 --> The route for "Users/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Users/index')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Reservas.php(49): redirect('Users/index')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 01:56:20 --> The route for "../Users/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('../Users/index')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Reservas.php(49): redirect('../Users/index')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 01:56:51 --> The route for "Users/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Users/index')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Reservas.php(49): redirect('Users/index')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 01:56:58 --> The route for "/Users/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Users/index')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Reservas.php(49): redirect('/Users/index')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 01:57:29 --> Non-static method App\Controllers\Users::index() cannot be called statically
+in APPPATH\Controllers\Reservas.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 02:11:15 --> Call to a member function update() on array
+in APPPATH\Controllers\Reservas.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 02:15:26 --> Call to a member function save() on array
+in APPPATH\Controllers\Reservas.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 02:19:20 --> Call to a member function save() on array
+in APPPATH\Controllers\Reservas.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 02:25:00 --> Call to a member function update() on array
+in APPPATH\Controllers\Reservas.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 02:27:27 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('user_id', '1', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->whereIn('user_id', '1')
+ 3 APPPATH\Controllers\Reservas.php(42): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 02:29:42 --> Call to a member function set() on array
+in APPPATH\Controllers\Reservas.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->access()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 02:39:20 --> Undefined variable $data
+in APPPATH\Controllers\Users.php on line 11.
+ 1 APPPATH\Controllers\Users.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Users.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 02:39:54 --> Undefined variable $header
+in APPPATH\Views\user\dashboard.php on line 1.
+ 1 APPPATH\Views\user\dashboard.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\wamp64\\www\\Torremar\\app\\Views\\user\\dashboard.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\Torremar\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\Users.php(11): view('user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 03:44:44 --> Cannot use [] for reading
+in APPPATH\Views\user\dashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-02 03:52:28 --> Undefined variable $book
+in APPPATH\Views\user\dashboard.php on line 27.
+ 1 APPPATH\Views\user\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $book', 'C:\\wamp64\\www\\Torremar\\app\\Views\\user\\dashboard.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\Torremar\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\Users.php(16): view('user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 04:04:06 --> Undefined array key ""
+in APPPATH\Views\user\dashboard.php on line 23.
+ 1 APPPATH\Views\user\dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\wamp64\\www\\Torremar\\app\\Views\\user\\dashboard.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\Torremar\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 04:06:23 --> Undefined array key "approved"
+in APPPATH\Views\user\dashboard.php on line 34.
+ 1 APPPATH\Views\user\dashboard.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "approved"', 'C:\\wamp64\\www\\Torremar\\app\\Views\\user\\dashboard.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\Torremar\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 05:03:57 --> Class "file" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\template\header.php(59): session('msg')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\Torremar\\app\\Views\\template\\header.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+10 APPPATH\Controllers\Reservas.php(23): view('template/header')
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->login()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 05:04:04 --> Class "file" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\template\header.php(59): session('msg')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\Torremar\\app\\Views\\template\\header.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+10 APPPATH\Controllers\Reservas.php(11): view('template/header')
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 05:04:10 --> Class "file" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\template\header.php(59): session('msg')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\Torremar\\app\\Views\\template\\header.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+10 APPPATH\Controllers\Reservas.php(11): view('template/header')
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 05:20:19 --> Undefined variable $data
+in APPPATH\Controllers\Users.php on line 23.
+ 1 APPPATH\Controllers\Users.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Users.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->rooms()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 05:21:07 --> Undefined variable $userModel
+in APPPATH\Controllers\Users.php on line 21.
+ 1 APPPATH\Controllers\Users.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Users.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->rooms()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
