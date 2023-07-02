@@ -39,7 +39,7 @@
           <a class="nav-link active" aria-current="page" href="<?= site_url('dashboard') ?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?= site_url('rooms') ?>">Habitaciones</a>
+          <a class="nav-link active" aria-current="page" href="<?= site_url('roomsManage') ?>">Habitaciones</a>
         </li>
       </ul>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
