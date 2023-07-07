@@ -1,0 +1,225 @@
+CRITICAL - 2023-07-04 02:34:54 --> Undefined array key "user_username"
+in APPPATH\Controllers\Reservas.php on line 60.
+ 1 APPPATH\Controllers\Reservas.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_username"', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Reservas.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 19:26:59 --> Array to string conversion
+in APPPATH\Views\template\header.php on line 65.
+ 1 APPPATH\Views\template\header.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Torremar\\app\\Views\\template\\header.php', 65)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\Torremar\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Reservas.php(12): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 19:30:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Users.php on line 78.
+ 1 APPPATH\Controllers\Users.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Users.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 19:34:54 --> Attempt to read property "room_id" on array
+in APPPATH\Controllers\Reservas.php on line 67.
+ 1 APPPATH\Controllers\Reservas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "room_id" on array', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Reservas.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 19:49:56 --> Undefined property: App\Controllers\Reservas::$db
+in APPPATH\Controllers\Reservas.php on line 67.
+ 1 APPPATH\Controllers\Reservas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Reservas::$db', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Reservas.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 20:05:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Controllers\Reservas.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-04 20:07:23 --> mysqli_sql_exception: Unknown column 'SELECT * FROM tor_reserve WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and' in 'field list' in C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `SELECT ...', 0)
+#1 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT ...')
+#2 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT ...')
+#3 C:\wamp64\www\Torremar\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT ...', Array, false)
+#4 C:\wamp64\www\Torremar\app\Controllers\Reservas.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Torremar\system\CodeIgniter.php(932): App\Controllers\Reservas->search()
+#6 C:\wamp64\www\Torremar\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#7 C:\wamp64\www\Torremar\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Torremar\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-04 20:07:23 --> Unknown column 'SELECT * FROM tor_reserve WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `SELECT * FROM tor_reserve WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and` `res_exit`
+FROM `tor_reserve`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT * FROM tor_reserve WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and` `res_exit`
+FROM `tor_reserve`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT * FROM tor_reserve WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and` `res_exit`
+FROM `tor_reserve`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT * FROM tor_reserve WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and` `res_exit`
+FROM `tor_reserve`', [], false)
+ 5 APPPATH\Controllers\Reservas.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-04 20:08:17 --> mysqli_sql_exception: Unknown column 'SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and' in 'field list' in C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `SELECT ...', 0)
+#1 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT ...')
+#2 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT ...')
+#3 C:\wamp64\www\Torremar\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT ...', Array, false)
+#4 C:\wamp64\www\Torremar\app\Controllers\Reservas.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Torremar\system\CodeIgniter.php(932): App\Controllers\Reservas->search()
+#6 C:\wamp64\www\Torremar\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#7 C:\wamp64\www\Torremar\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Torremar\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-04 20:08:17 --> Unknown column 'SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and` `res_exit`
+FROM `tor_reserve`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and` `res_exit`
+FROM `tor_reserve`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and` `res_exit`
+FROM `tor_reserve`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and` `res_exit`
+FROM `tor_reserve`', [], false)
+ 5 APPPATH\Controllers\Reservas.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-04 20:49:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exi' at line 1 in C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SELECT *...', 0)
+#1 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT *...')
+#2 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT *...')
+#3 C:\wamp64\www\Torremar\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SELECT *...', Array, false)
+#4 C:\wamp64\www\Torremar\app\Controllers\Reservas.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Torremar\system\CodeIgniter.php(932): App\Controllers\Reservas->search()
+#6 C:\wamp64\www\Torremar\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#7 C:\wamp64\www\Torremar\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Torremar\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-04 20:49:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exi' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exit
+FROM `tor_reserve`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exit
+FROM `tor_reserve`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exit
+FROM `tor_reserve`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exit
+FROM `tor_reserve`', [], false)
+ 5 APPPATH\Controllers\Reservas.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-04 20:51:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * WHERE res_approved = 1 AND {$entry_date} NOT between res_entry and res_' at line 1 in C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SELECT *...', 0)
+#1 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT *...')
+#2 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT *...')
+#3 C:\wamp64\www\Torremar\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SELECT *...', Array, false)
+#4 C:\wamp64\www\Torremar\app\Controllers\Reservas.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Torremar\system\CodeIgniter.php(932): App\Controllers\Reservas->search()
+#6 C:\wamp64\www\Torremar\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#7 C:\wamp64\www\Torremar\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Torremar\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-04 20:51:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * WHERE res_approved = 1 AND {$entry_date} NOT between res_entry and res_' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SELECT * WHERE res_approved = 1 AND {$entry_date} NOT between res_entry and res_exit
+FROM `tor_reserve`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT * WHERE res_approved = 1 AND {$entry_date} NOT between res_entry and res_exit
+FROM `tor_reserve`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT * WHERE res_approved = 1 AND {$entry_date} NOT between res_entry and res_exit
+FROM `tor_reserve`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SELECT * WHERE res_approved = 1 AND {$entry_date} NOT between res_entry and res_exit
+FROM `tor_reserve`', [], false)
+ 5 APPPATH\Controllers\Reservas.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-04 20:51:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exi' at line 1 in C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Torremar\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SELECT *...', 0)
+#1 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT *...')
+#2 C:\wamp64\www\Torremar\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT *...')
+#3 C:\wamp64\www\Torremar\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SELECT *...', Array, false)
+#4 C:\wamp64\www\Torremar\app\Controllers\Reservas.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Torremar\system\CodeIgniter.php(932): App\Controllers\Reservas->search()
+#6 C:\wamp64\www\Torremar\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#7 C:\wamp64\www\Torremar\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Torremar\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-04 20:51:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exi' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exit
+FROM `tor_reserve`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exit
+FROM `tor_reserve`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exit
+FROM `tor_reserve`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SELECT * WHERE res_approved = 1 AND 2023-07-04 NOT between res_entry and res_exit
+FROM `tor_reserve`', [], false)
+ 5 APPPATH\Controllers\Reservas.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 20:57:23 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Reservas.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 21:03:14 --> Undefined variable $query
+in APPPATH\Controllers\Reservas.php on line 77.
+ 1 APPPATH\Controllers\Reservas.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Reservas.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 21:27:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Users.php on line 78.
+ 1 APPPATH\Controllers\Users.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Users.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Users->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 21:27:45 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Reservas.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 21:28:24 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Reservas.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 21:29:52 --> Undefined array key "res_rooms"
+in APPPATH\Controllers\Reservas.php on line 87.
+ 1 APPPATH\Controllers\Reservas.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "res_rooms"', 'C:\\wamp64\\www\\Torremar\\app\\Controllers\\Reservas.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 21:31:07 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Reservas.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Reservas->search()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

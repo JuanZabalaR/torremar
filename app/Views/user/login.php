@@ -20,7 +20,7 @@
   <div class="card mb-3">
     <div class="row g-0 d-flex align-items-center">
       <div class="col-lg-4 d-none d-lg-flex">
-        <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" alt="Torremar Login"
+        <img src="<?=base_url('img/logoTorremar.jpg')?>" alt="Torremar Login"
           class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
       </div>
       <div class="col-lg-8">

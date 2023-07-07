@@ -2,7 +2,7 @@
 <div class="container">
     <div class="col-md-12">
         <h2> Contacto </h2>
-        <p> Torremar es una compania de toda la vida bien chevere </p>
+        <p> Haznos llegar tu mensaje </p>
         <form method="post" action="" enctype="multipart/form-data">
             <div class="col-md-4">
                 <label>Nombre </label>
