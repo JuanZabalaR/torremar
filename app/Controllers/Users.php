@@ -8,10 +8,10 @@ use App\Models\Bedroom;
 class Users extends Controller{
     // public function __construct()
     // {
-    //     if(!is_cli()){
-    //         echo "go away!!";
-    //         die();
-    //        // Or redirect to an other page 
+    //     $us = new User();
+    //     $valid = $us->where('user_session',1)->first();
+    //     if($valid != []){
+    //         return $this->response->redirect(base_url('login')); 
     //     }
     //     parent::__construct();
     // } 
@@ -81,9 +81,7 @@ class Users extends Controller{
         $user = $userModel->where('user_session',1)->first();
         $id = $user['user_id'];
         $userModel->whereIn('user_id',[$id])->set(['user_session' => 0])->update();
-        $data['header'] = view('template/header');
-        $data['footer'] = view('template/footer');
-        return view('home',$data);
+        return $this->response->redirect(site_url('/')); 
     }
     public function deleteRoom($id=null){
         $session = session();

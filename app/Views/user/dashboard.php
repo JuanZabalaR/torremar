@@ -1,4 +1,6 @@
-<?= $header ?>
+<?= $header;
+
+if(isset($user)){ ?>
 <div class="col md-12">
     <h2> Bienvenido al administrador de Reservas </h2>
     <p> Aca podras administrar tu sistema de habitaciones y reservas </p>
@@ -49,9 +51,5 @@ if(count($bookings) != 0){
 <?php } ?>
   </tbody>
 </table>
-<!-- <h2> Calendario de Reservas </h2>
-<div id='calendar'></div>
-</div> -->
-<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
-
+<?php } ?>
 <?= $footer ?>

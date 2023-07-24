@@ -6,10 +6,7 @@ use App\Models\Reserva;
 use App\Models\User;
 use App\Models\Bedroom;
 class Reservas extends Controller{
-    // protected $request;
-    // public function __construct(){
-    //     $this->request = \Config\Services::request();
-    // }
+
     public function index()
     {
         $data['user'] = new User();
